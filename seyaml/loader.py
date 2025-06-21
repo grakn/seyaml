@@ -1,6 +1,7 @@
 import yaml
 import os
 import base64
+from typing import Optional
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 def parse_key_with_index(value: str):
@@ -17,7 +18,7 @@ def parse_key_with_index(value: str):
 class SeYamlLoader(yaml.SafeLoader):
     """YAML loader with !secret, !env, and !enc tag support."""
 
-    def __init__(self, stream, secrets=None, decryption_key: bytes | None = None):
+    def __init__(self, stream, secrets=None, decryption_key: Optional[bytes] = None):
         super().__init__(stream)
         self.secrets = secrets or {}
         self.decryption_key = decryption_key
