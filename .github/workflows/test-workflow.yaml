@@ -29,6 +29,8 @@ jobs:
           pip install .[dev]
           pip install pytest
 
+      - name: Add current directory to PYTHONPATH
+        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
+
       - name: Run tests
-        run: |
-          pytest tests --tb=short --disable-warnings
+        run: PYTHONPATH=. pytest tests --tb=short --disable-warnings
