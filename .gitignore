@@ -1,3 +1,5 @@
 .gitconfig
 .venv/
 __pycache__/
+seyaml.egg-info/
+build/

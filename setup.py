@@ -6,6 +6,7 @@ setup(
     description="YAML loader with support for !secret, !env, and !enc tags",
     author="Pragman",
     author_email="a@staphi.com",
+    url="https://github.com/grakn/seyaml",
     packages=find_packages(),
     install_requires=[
         "PyYAML>=6.0",
