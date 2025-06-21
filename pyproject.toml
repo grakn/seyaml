@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seyaml"
+version = "0.1.0"
+description = "YAML loader with support for !secret, !env, and !enc tags"
+authors = [{name = "Phragman", email = "a@staphi.com"}]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "PyYAML>=6.0",
+    "cryptography>=40.0",
+    "click>=8.0"
+]
+license = {text = "MIT"}
+
+[project.scripts]
+seyaml = 'seyaml.cli:cli'
