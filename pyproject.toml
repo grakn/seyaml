@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "seyaml"
-version = "0.1.0"
+version = "0.1.1"
 description = "YAML loader with support for !secret, !env, and !enc tags"
 authors = [{name = "Phragman", email = "a@staphi.com"}]
 readme = "README.md"

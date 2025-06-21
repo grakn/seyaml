@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name="seyaml",
-    version="0.1.0",
+    version="0.1.1",
     description="YAML loader with support for !secret, !env, and !enc tags",
-    author="Your Name",
-    author_email="you@example.com",
+    author="Pragman",
+    author_email="a@staphi.com",
     packages=find_packages(),
     install_requires=[
         "PyYAML>=6.0",
