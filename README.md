@@ -1,5 +1,8 @@
 # seyaml
 
+![Unit Tests](https://github.com/grakn/seyaml/actions/workflows/test.yaml/badge.svg?branch=main)
+[![PyPI Downloads](https://static.pepy.tech/badge/seyaml)](https://pepy.tech/projects/seyaml)
+
 `seyaml` is a Python YAML loader and CLI tool supporting custom tags:
 
 - `!env VAR` — load environment variable, supports indexing like `!env VAR[0]` for comma separated values
